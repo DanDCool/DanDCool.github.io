@@ -72,3 +72,29 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
+/* About Me Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    border: 3px solid #4CAF50; /* Optional: add a border around the image */
+    max-height: 250px; /* Limit the image size */
+}
