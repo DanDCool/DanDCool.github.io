@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9; /* Light background color */
-    color: #4b0082; /* Purple text color */
+    color: #000; /* Black text for regular content */
     line-height: 1.6;
 }
 
