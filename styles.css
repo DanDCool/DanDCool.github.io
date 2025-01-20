@@ -10,6 +10,7 @@ body {
     color: #000;
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
+    padding: 0 20px; /* Added padding to create space from sides */
 }
 
 /* Sidebar styling */
@@ -119,6 +120,8 @@ body {
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;  /* Added space from sides */
+    margin-right: 20px; /* Added space from sides */
 }
 
 .box h2 {
