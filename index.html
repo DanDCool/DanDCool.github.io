@@ -3,93 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal GitHub Page">
-    <title>Amirali Hosseini Moghaddam - GitHub</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Add a link to your own favicon (optional) -->
+    <meta name="description" content="GitHub Portfolio">
+    <title>Amirali Hosseini Moghaddam - Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 id="header-title">Amirali Hosseini Moghaddam</h1>
-            <p id="header-welcome">Welcome to my personal website!</p>
-            <button onclick="toggleLanguage()" id="language-toggle">Switch to Persian</button>
-        </div>
-    </header>
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 
-    <section class="about">
-        <div class="container">
-            <h2 id="about-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p id="about-text-en">
-                        Hello! I'm a first-year Computer Engineering student passionate about game development and 
-                        contributing to interesting projects. Feel free to explore my repositories and learn more about my interests.
-                    </p>
-                    <p id="about-text-fa" class="lang-fa">
-                        سلام! من یک دانشجوی سال اول مهندسی کامپیوتر هستم که به توسعه بازی علاقه دارم و 
-                        به پروژه‌های جالب مشارکت می‌کنم. از شما دعوت می‌کنم که مخزن‌های من را بررسی کنید و بیشتر درباره علایقم بدانید.
-                    </p>
-                </div>
-                <div class="about-image">
-                    <img src="photo_2025-01-20_00-01-31.jpg" alt="Amirali's Photo" />
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="content">
+        <header>
+            <h1>Amirali Hosseini Moghaddam</h1>
+            <p>Welcome to my GitHub portfolio! Explore my work below.</p>
+        </header>
 
-    <section class="projects">
-        <div class="container">
-            <h2 id="projects-title">Things I do:</h2>
+        <section class="box about">
+            <h2>About Me</h2>
+            <p>
+                I'm a first-year Computer Engineering student passionate about software development 
+                and game creation. Always eager to learn and contribute to open-source.
+            </p>
+        </section>
+
+        <section class="box skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming: Python, JavaScript, C++</li>
+                <li>Web Development: HTML, CSS, React</li>
+                <li>Game Development: Unity, Unreal Engine</li>
+                <li>Version Control: Git, GitHub</li>
+            </ul>
+        </section>
+
+        <section class="box projects">
+            <h2>Projects</h2>
             <ul>
                 <li>
-                    <h3><a href="https://github.com/yourusername/project1" target="_blank" id="project1-title">I play the piano</a></h3>
-                    <p id="project1-description">I've been playing the piano since I was 6 .-. (I'm pretty good at it ngl).</p>
+                    <h3><a href="https://github.com/yourusername/project1" target="_blank">Game Development</a></h3>
+                    <p>A 3D game built with Unity and C# showcasing physics and game mechanics.</p>
                 </li>
                 <li>
-                    <h3><a href="https://github.com/yourusername/project2" target="_blank" id="project2-title">I can speak English pretty well</a></h3>
-                    <p id="project2-description">Watching youtube since 6th to 7th grade really helped my English skills.</p>
+                    <h3><a href="https://github.com/yourusername/project2" target="_blank">Portfolio Website</a></h3>
+                    <p>A fully responsive portfolio built with HTML, CSS, and JavaScript.</p>
                 </li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <section class="contact">
-        <div class="container">
-            <h2 id="contact-title">Contact</h2>
-            <p id="contact-email">You can reach me at <a href="mailto:amirali.hm.2006@gmail.com">amirali.hm.2006@gmail.com</a>.</p>
-        </div>
-    </section>
+        <section class="box contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:amirali.hm.2006@gmail.com">amirali.hm.2006@gmail.com</a></p>
+        </section>
 
-    <footer>
-        <div class="container">
-            <p id="footer-text">&copy; 2025 Amirali Hosseini Moghaddam. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Function to toggle between English and Persian
-        function toggleLanguage() {
-            const langToggleButton = document.getElementById("language-toggle");
-
-            // Toggle content visibility for English and Persian
-            const langEnElements = document.querySelectorAll('.lang-en');
-            const langFaElements = document.querySelectorAll('.lang-fa');
-
-            langEnElements.forEach(element => element.style.display = element.style.display === 'none' ? '' : 'none');
-            langFaElements.forEach(element => element.style.display = element.style.display === 'none' ? '' : 'none');
-
-            // Change button text based on the language
-            if (langToggleButton.innerText === "Switch to Persian") {
-                langToggleButton.innerText = "Switch to English";
-            } else {
-                langToggleButton.innerText = "Switch to Persian";
-            }
-        }
-
-        // Initially set Persian content to hidden
-        document.querySelectorAll('.lang-fa').forEach(element => element.style.display = 'none');
-    </script>
+        <footer>
+            <p>&copy; 2025 Amirali Hosseini Moghaddam. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
